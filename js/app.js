@@ -1,6 +1,14 @@
 $(document).ready( function() {
+
   var setHeight = $( document ).height();
   $('.page').css("height", setHeight);
+
+  $("#header-nav").on("click", "li", function() {
+    $(this).siblings().removeClass("active");
+    $(this).addClass("active");
+  });
+
+  // ******* Smooth Scroll ****************
 
    $(".contactLink").click(function(){
                     if ($("#contactForm").is(":hidden")){
