@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My First App</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/curtain.css">
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.js"></script>
+    <script src="./js/curtain.js"></script>
     <script src="./js/app.js"></script>
   </head>
   <body>
@@ -17,25 +18,98 @@
       </ul> 
     </nav>
 
-    <div id="page1" class="page">
-      <a id="portfolio"></a>
-      <br><br><br>
-      <h3>Portfolio</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime qui autem, illum, sequi harum fuga provident suscipit repudiandae, earum optio placeat magni natus quas vel sunt quibusdam quia molestias!</p>
-    </div>
-    
-    <div id="page2" class="page">
-      <a id="about"></a>
-      <br><br><br>
-      <h3>About page</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ut similique minima beatae praesentium doloremque velit maiores molestias esse voluptatibus culpa nostrum tempore, animi fugit nam ratione, eos impedit delectus!</p>
-    </div>
+    <ol class="curtains">
+      <li id="section-1" class="cover">
+        <section>
+          <br><br><br>
+          <h3>Portfolio</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime qui autem, illum, sequi harum fuga provident suscipit repudiandae, earum optio placeat magni natus quas vel sunt quibusdam quia molestias!</p>
 
-    <div id="page3" class="page">
-      <a id="contact"></a>
-      <br><br><br>
-      <h3>Contact</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quisquam sunt ducimus laboriosam ipsa, quo, eos natus ea impedit perspiciatis, maxime ratione aliquam ut velit dolores. Officiis pariatur, porro sint!</p>
-    </div>
+          <div class="row">
+
+            <div class="col-xs-6 col-md-3">
+              <div class="thumbnail">
+                <a href="http://loganrice.github.io/streetfighter/main.html" class="thumbnail">
+                  <img src="/Users/admin/Documents/projects/portfolio/img/street_fighter.png" alt="">
+                </a>
+                <h3>Street Fighter</h3>
+                  <p>Used animated gifs with jquery's hide and show methods to simulate animation</p>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <div class="thumbnail">
+                <a href="http://loganrice.github.io/shopping_list/" class="thumbnail">
+                  <img src="/Users/admin/Documents/projects/portfolio/img/list.png" alt="">
+                </a>
+                <h3>List</h3>
+                  <p>Create a short list (i.e. shopping, todos, etc.). Click to add and remove items.</p>
+              </div>
+            </div>
+
+             <div class="col-xs-6 col-md-3">
+              <div class="thumbnail">
+                <a href="http://loganrice.github.io/business-site/">
+                  <img src="./img/monkey-clock.png" alt="">
+                </a>
+                <h3>Monkey Clocks</h3>
+                  <p>A fictitious business site. Worked with adobe illustrator to create banner and color scheme. Used twitter-bootstrap features to enhance the site.</p>
+              </div>
+            </div>
+          </section>
+      </li>
+      <li id="section-2">
+        <section>
+          <h3>About page</h3>
+          <div class="jumbotron row">
+            <div class="col-md-4">
+              <img id="self" src="./img/self.png" alt="" class="img-responsive img-rounded">
+            </div>
+            <div class="col-md-4">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ut similique minima beatae praesentium doloremque velit maiores molestias esse voluptatibus culpa nostrum tempore, animi fugit nam ratione, eos impedit delectus!</p>
+            </div>
+
+            <div class="col-md-4">
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Education</h3>
+                </div>
+                <div class="panel-body">
+                  <strong>MBA</strong>
+                  <br>
+                  <small>California State University Stanislaus</small>
+                  <br>
+                  <strong>Six Sigma Black Belt</strong>
+                  <br>
+                  <small>California State University Stanislaus</small>
+                  <br>
+                  <strong>B.S. Business Administration</strong>
+                  <br>
+                  <small>California State University Stanislaus</small>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </li>
+      <li id="section-3">
+        <section>
+          <a id="contact"></a>
+          <br><br><br>
+          <h3>Contact</h3>
+
+          <div class="list-group">
+            <a href="#" class="list-group-item disabled">
+              Logan Rice
+            </a>
+            <a href="#" class="list-group-item">https://github.com/loganrice</a>
+            <a href="#" class="list-group-item">LoganRice72@Gmail.com</a>
+          </div>
+        </section>
+      </li>
+    </ol>
+
   </body>
 </html>

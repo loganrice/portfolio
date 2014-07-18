@@ -4,3 +4,8 @@ body { padding-top: 70px; }
   padding-left: 50px;
   padding-right: 50px;
 }
+
+.contacts {
+  max-width: 50px;
+}
+
