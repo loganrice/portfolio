@@ -12,52 +12,99 @@
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <ul id="header-nav" class="nav navbar-nav">
-        <li><a href="#about">About</a> </li>
-        <li class="active"><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a>Logan Rice</a></li>
       </ul> 
     </nav>
-
+    <br>
+    <br>
+    <br>
     <ol class="curtains">
-      <li id="section-1" class="cover">
+      <li id="section-1" class="cover project">
         <section>
-          <br><br><br>
-          <h3>Portfolio</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime qui autem, illum, sequi harum fuga provident suscipit repudiandae, earum optio placeat magni natus quas vel sunt quibusdam quia molestias!</p>
+          <h3>Projects</h3>
 
-          <div class="row">
+          
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#home" role="tab" data-toggle="tab">Front-end</a></li>
+            <li><a href="#profile" role="tab" data-toggle="tab">Ruby on Rails</a></li>
+            <li><a href="#messages" role="tab" data-toggle="tab">Ember</a></li>
+            <li><a href="#settings" role="tab" data-toggle="tab">Angularjs</a></li>
+          </ul>
 
-            <div class="col-xs-6 col-md-3">
-              <div class="thumbnail">
-                <a href="http://loganrice.github.io/streetfighter/main.html" class="thumbnail">
-                  <img src="/Users/admin/Documents/projects/portfolio/img/street_fighter.png" alt="">
-                </a>
-                <h3>Street Fighter</h3>
-                  <p>Used animated gifs with jquery's hide and show methods to simulate animation</p>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="home">
+              <div class="row">
+
+                <!-- Project -->
+                <div class="col-xs-6 col-md-3">
+                    <h3>Jquery simulate animation with hide and show functions</h3>
+                    <a href="http://loganrice.github.io/streetfighter/main.html" class="thumbnail">
+                      <img src="/Users/admin/Documents/projects/portfolio/img/street_fighter.png" alt="">
+                    </a>
+                </div>
+
+                <!-- Project -->
+                <div class="col-xs-6 col-md-3">
+                  <h3>Jquery add and remove elements from DOM</h3>
+                  <a href="http://loganrice.github.io/shopping_list/" class="thumbnail">
+                    <img src="/Users/admin/Documents/projects/portfolio/img/list.png" alt="">
+                  </a>
+                </div>
+
+                <!-- Project -->
+                <div class="col-xs-6 col-md-3">
+                  <h3>A simple bootstrap layout and illustrator techniques</h3>
+                  <a href="http://loganrice.github.io/business-site/" class="thumbnail">
+                    <img src="./img/monkey-clock.png" alt="">
+                  </a>
+                </div>
+
+              </div>
+
+              <!-- <div class="row"> -->
+                 <!-- Project -->
+                <div class="col-xs-6 col-md-3">
+                  <h3>Time tracker using DropBox API datastorage</h3>
+                  <a href="https://qalogger.appspot.com/" class="thumbnail">
+                    <img src="./img/simple_time.png" alt="">
+                  </a>
+                </div>
+              <!-- </div> -->
+            </div> 
+            
+
+
+            <div class="tab-pane" id="profile">
+              <div class="row">
+                 <!-- Project -->
+                <div class="col-xs-6 col-md-3">
+                  <h3>BlackJack Game deployed on Heroku</h3>
+                  <a href="http://lit-inlet-5745.herokuapp.com/game" class="thumbnail">
+                    <img src="./img/blackjack.png" alt="">
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="col-xs-6 col-md-3">
-              <div class="thumbnail">
-                <a href="http://loganrice.github.io/shopping_list/" class="thumbnail">
-                  <img src="/Users/admin/Documents/projects/portfolio/img/list.png" alt="">
-                </a>
-                <h3>List</h3>
-                  <p>Create a short list (i.e. shopping, todos, etc.). Click to add and remove items.</p>
+            <div class="tab-pane" id="messages">
+              <div class="row">
+                 <!-- Project -->
+                <div class="col-xs-6 col-md-3">
+                  <h3>Ember blog example</h3>
+                  <a href="https://github.com/loganrice/ember-starter-example" class="thumbnail">
+                    <img src="./img/ember_example.png" alt="">
+                  </a>
+                </div>
               </div>
             </div>
+            <div class="tab-pane" id="settings"><h3>Comming Soon...</h3></div>
+          </div>
 
-             <div class="col-xs-6 col-md-3">
-              <div class="thumbnail">
-                <a href="http://loganrice.github.io/business-site/">
-                  <img src="./img/monkey-clock.png" alt="">
-                </a>
-                <h3>Monkey Clocks</h3>
-                  <p>A fictitious business site. Worked with adobe illustrator to create banner and color scheme. Used twitter-bootstrap features to enhance the site.</p>
-              </div>
-            </div>
-          </section>
-      </li>
+        </section>
+      </li>  
+
+
       <li id="section-2">
         <section>
           <h3>About page</h3>
@@ -97,18 +144,19 @@
       <li id="section-3">
         <section>
           <a id="contact"></a>
-          <br><br><br>
+         
           <h3>Contact</h3>
 
           <div class="list-group">
-            <a href="#" class="list-group-item disabled">
+            <p class="list-group-item disabled">
               Logan Rice
-            </a>
-            <a href="#" class="list-group-item">https://github.com/loganrice</a>
-            <a href="#" class="list-group-item">LoganRice72@Gmail.com</a>
+            </p>
+            <a href="https://github.com/loganrice" class="list-group-item">https://github.com/loganrice</a>
+            <a href="mailto:loganrice72@gmail.com" class="list-group-item">LoganRice72@Gmail.com</a>
           </div>
         </section>
       </li>
+      
     </ol>
 
   </body>
